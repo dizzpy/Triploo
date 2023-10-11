@@ -1,0 +1,38 @@
+/*! Variables */
+:root {
+    /* Font Styles */
+    --mainfont: 'Onest', sans-serif;
+
+    /* Color Variables */
+    --colorBlueMain: #22577A;
+    --colorBlack: #010101;
+    --colorSecondYellow: #f7e8cf;
+    --colorGray: #606566;
+    --colorWhite: #FDFDFD;
+}
+
+/* Reset Styles */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Text Selection Styles */
+::-moz-selection {
+    color: var(--colorBlack);
+    background: var(--colorBlueMain);
+}
+
+/* Page selection colos  */
+::selection {
+    color: var(--colorWhite);
+    background: var(--colorBlueMain);
+}
+
+/* All Other Content */
+.main{
+    text-align: center;
+    padding-top: 25%;
+    font-family: var(--mainfont) !important;
+}
