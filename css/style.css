@@ -7,8 +7,25 @@
     --colorBlueMain: #22577A;
     --colorBlack: #010101;
     --colorSecondYellow: #f7e8cf;
+    --colorYellow: #EAAB44;
     --colorGray: #606566;
     --colorWhite: #FDFDFD;
+    --colorBackground: #F4F9FF;
+}
+
+body{
+    font-family: var(--mainfont) !important;
+    cursor: default;
+    height: 100vh;
+    background-color: var(--colorBackground);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 /* Reset Styles */
@@ -31,8 +48,63 @@
 }
 
 /* All Other Content */
-.main{
-    text-align: center;
-    padding-top: 25%;
-    font-family: var(--mainfont) !important;
+/* Here section Start here */
+
+/* nav bar */
+.container{
+    margin-left: 125px !important;
+    margin-right: 125px !important;
 }
+
+.main-logo img{
+    width: 110px;
+    flex-shrink: 0;
+}
+
+.nav-link{
+    color: var(--colorBlueMain) !important;
+    font-family: var(--mainfont);
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    letter-spacing: 1px !important;
+}
+.nav-link:hover{
+    color: var(--colorYellow) !important;
+    letter-spacing: 1.2px !important;
+}
+
+.button{
+    width: 136px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 16px 0px rgba(34, 87, 122, 0.25);
+    background: var(--colorBlueMain);
+    color: var(--colorWhite);
+    border-color: transparent ;
+    transition: 10ms;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.button:hover{
+    background-color: var(--colorYellow) !important;
+    letter-spacing: 1.2px !important;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+  
+.nav-item {
+    display: inline-block;
+    margin: 0 15px;
+}
+.navbar-nav .nav-item {
+    margin-right: 5px;
+  }
+
+.navbar{
+    background-color: var(--colorBackground) !important;
+}
+/* Here section End here */
