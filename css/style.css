@@ -122,6 +122,9 @@ body::-webkit-scrollbar {
 .space-tb-5{
     height: 5px !important;
 }
+.space-tb-60{
+    height: 60px !important;
+}
 .hero-section{
     margin-top: auto;
     width: 100% !important;
@@ -247,4 +250,79 @@ input {
 input::placeholder {
     color: #C5C5C5; /* Set the color you desire */
   }
-/* Here section End here */
+
+  /* hero section end */
+
+ /* 
+ ==============================================
+                  Destinations                  
+ ============================================== 
+ */
+
+.destinations{
+    background-color: var(--colorBlueMain);
+    width: 100%;
+    height: auto;
+}
+
+.destination-main-txt{
+    color: var(--colorWhite);
+    font-family: var(--mainfont);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    margin-bottom: 30px;
+}
+
+.explore-txt{
+    color: var(--colorWhite);
+    font-family: var(--mainfont);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.36px;
+}
+
+.textArea{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    width: 250px;
+    height: 276px;
+    padding: 10px !important;
+}
+
+.card-col {
+    margin-right: 5px; /* Adjust the margin as needed */
+}
+.card{
+    padding: 0px !important;
+
+    border-radius: 12px !important;
+    background: #FFF;
+}
+.cardImg{
+    display: flex;
+    width: 100% !important;
+    height: 125px !important;
+    background-color: red;
+    align-self: center;
+
+    border-radius: 10px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cardText{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    padding-top: 20px;
+   
