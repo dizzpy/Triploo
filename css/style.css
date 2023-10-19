@@ -1,0 +1,806 @@
+/*! Variables */
+:root {
+    /* Font Styles */
+    --mainfont: 'Onest', sans-serif;
+
+    /* Color Variables */
+    --colorBlueMain: #22577A;
+    --colorBlack: #010101;
+    --colorSecondYellow: #f7e8cf;
+    --colorYellow: #EAAB44;
+    --colorGray: #606566;
+    --colorWhite: #FDFDFD;
+    --colorBackground: #F4F9FF;
+}
+
+body{
+    font-family: var(--mainfont) !important;
+    cursor: default;
+    height: 100vh;
+    background-color: var(--colorBackground);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Reset Styles */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Text Selection Styles */
+::-moz-selection {
+    color: var(--colorBlack);
+    background: var(--colorYellow);
+}
+
+/* Page selection colos  */
+::selection {
+    color: var(--colorWhite);
+    background: var(--colorYellow);
+}
+
+/* All Other Content */
+/* Here section Start here */
+
+/* nav bar */
+/* .container{
+    margin-left: 125px !important;
+    margin-right: 125px !important;
+} */
+
+.main-logo img{
+    width: 110px;
+    flex-shrink: 0;
+}
+
+.nav-link{
+    color: var(--colorBlueMain) !important;
+    font-family: var(--mainfont);
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    letter-spacing: 1px !important;
+}
+.nav-link:hover{
+    color: var(--colorYellow) !important;
+    /* letter- spacing: 1.2px !important; */
+}
+
+.button{
+    width: 136px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 16px 0px rgba(34, 87, 122, 0.25);
+    background: var(--colorBlueMain);
+    color: var(--colorWhite);
+    border-color: transparent ;
+    transition: 10ms;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.button:hover{
+    background-color: var(--colorYellow) !important;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+  
+.nav-item {
+    display: inline-block;
+    margin: 0 15px;
+}
+.navbar-nav .nav-item {
+    margin-right: 5px;
+  }
+
+.navbar{
+    background-color: var(--colorBackground) !important;
+    height: 70px !important;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+.d-NavContainerFluid{
+    background-color: var(--colorBackground) !important;
+    width: 100%;
+}
+/* hero -->> carosel */
+
+.space-tb-20{
+    height: 20px !important;
+}
+.space-tb-15{
+    height: 15px !important;
+}
+.space-tb-10{
+    height: 10px !important;
+}
+.space-tb-5{
+    height: 5px !important;
+}
+.space-tb-60{
+    height: 60px !important;
+}
+.hero-section{
+    margin-top: auto;
+    width: 100% !important;
+    height: 90vh !important;
+    /* background-color: #ec6f6f; */
+}
+
+/* carosel start */
+.carosel{
+    margin-top: 100px;
+    height: 550px !important;
+    width: 100%;
+    border-radius: 12px;
+    /* background-image: url("../images/hero images/caroselArugambe.png"); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 5s;
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animate {
+    0%{
+        background-image: url("../images/hero images/carosel18Bond.jpg");
+    }
+    20%{
+        background-image: url("../images/hero images/caroselPeacock.jpg");
+    }
+    40%{
+        background-image: url("../images/hero images/caroselElle.jpg");
+    }
+    60%{
+        background-image: url("../images/hero images/caroselArugambe.png");
+    }
+    80%{
+        background-image: url("../images/hero images/caroselSigiriya.jpg");
+    }
+    100%{
+        background-image: url("../images/hero images/caroselTempleOfTooth.jpg");
+    }
+}
+
+.caro-text{
+    color: var(--colorWhite);
+    font-weight: 700;
+    align-items: center;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.caro-gradient{
+    margin-top: 100px;
+    height: 550px !important;
+    width: 100%;
+    border-radius: 12px;
+    background: linear-gradient(180deg, #023B4D -51.26%, rgba(5, 54, 73, 0.00) 100%);
+}
+/* carosel end */
+
+/* back box end */
+.back-box{
+    width: 800px;
+    height: 155px;
+    border-radius: 16px;
+    box-shadow: 0px 2px 30px 0px rgba(182, 182, 182, 0.25);
+    align-items: center;
+    margin-top: -70px;
+    /* z-index: 100; */
+    background-color: var(--colorWhite);
+
+    
+}
+
+.back-box-links{
+    padding-top: 15px;
+    /* padding-bottom: 15px; */
+}
+/* line hr */
+.line-hr{
+    height: 2px;
+    width: 650px;
+    background-color: var(--colorBlueMain);
+    border-radius: 50px;
+    opacity: 40%;
+}
+
+.search-area{
+    /* background-color: red; */
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.searchBar{
+    height: 44px;
+    border: transparent !important;
+    padding: 10px;
+    border-radius: 8px;
+    background: #EFEFEF !important;
+    box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.02);
+
+    /* width: 590px !important; */
+}
+
+input {
+    width: 590px; /* Set the width of the input element */
+    padding: 10px; /* Add padding inside the input element */
+    margin: 5px 0; /* Add margin around the input element */
+    border: 1px solid #ccc; /* Set a border with a color */
+    border-radius: 5px; /* Round the corners of the input element */
+    background-color: #f2f2f2; /* Set the background color */
+    color: #333; /* Set the text color */
+    font-size: 16px; /* Set the font size */
+    outline: none; /* Remove the default focus outline */
+    box-shadow: 0px 4px 16px 0px rgba(34, 87, 122, 0.25);
+    transition: border 0.3s; /* Add a smooth transition for the border */
+  }
+  
+input::placeholder {
+    color: #C5C5C5; /* Set the color you desire */
+  }
+
+  /* hero section end */
+
+ /* 
+ ==============================================
+                  Destinations                  
+ ============================================== 
+ */
+
+ /* .d-destination{
+    background: #22577A;
+    width: 1280px;
+    height: 700px;
+ } */
+
+.d-des-destinationContainer{
+    background: #22577A;
+    width: 100%;
+    height: 700px;
+    padding-top: 73px !important;
+    padding-bottom: 80px !important;
+}
+
+.d-des-mainText{
+    color: #ffffff;
+    font-family: var(--mainfont);
+    font-size: 37px;
+    font-weight: 700;
+    letter-spacing: 0.37px;
+    text-align: center;
+}
+
+/* cards */
+.d-des-cards{
+    width: 300px;
+    height: 276px;
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0px 3.22353px 14.50588px 0px rgba(34, 87, 122, 0.15);
+    margin-top: 50px;
+
+    margin-bottom: 87px;
+}
+
+.d-des-cardImg{
+    width: 300px;
+    height: 190px;
+    flex-shrink: 0;
+    border-radius: 15px 15px 0px 0px;
+    background: #010101;
+}
+
+.d-des-cardText{
+   color: #22577A;
+   text-align: center;
+   font-family: var(--mainfont);
+   font-size: 27.73px;
+   font-weight: 700;
+   letter-spacing: 0.277px;
+   margin-top: 14px;
+   
+}
+
+.d-des-city {
+    display: inline-flex;
+    align-items: center;
+    gap: 3.224px; /* Centers both horizontally and vertically */
+}
+  
+
+.d-des-cityName{
+    display: flex;
+    color: var(--colorBlueMain);
+    font-family: var(--mainfont);
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.113px;
+    
+}
+
+.d-des-exploreButton {
+    align-items: center;
+    display: flex; /* Make it a flex container */
+    height: 57px;
+    width: 180px;
+    border-radius: 32.362px;
+    border: 2.157px solid #FFF;
+    background-color: transparent;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    text-align: center; /* Center text horizontally */
+    transition: 100ms ease-in-out;
+
+    justify-content: center;
+    display: flex;
+
+    color: #FFF;
+    font-family: var(--mainfont);
+    font-weight: 600;
+    letter-spacing: 0.388px;
+    font-size: 19.417px;
+    margin-top: 5px;
+}
+  
+/* d-des-exploreButton hover effect */
+.d-des-exploreButton:hover{
+    background-color: #FFF;
+    color: var(--colorBlueMain);
+}
+
+/* Horizontal scroll bar */
+.scroll-container {
+    white-space: nowrap;
+    overflow-x: auto;
+    padding: 0px;
+}
+  
+.scroll-item {
+    display: inline-block;
+    padding: 0px;
+    margin-right: 10px;
+}
+
+/* card carosel start */  
+/* card carosel end */
+  
+  
+
+ /* 
+ ==============================================
+                  Choose US                  
+ ============================================== 
+ */
+
+ .d-why-WhyChooseContainer{
+    background: var(--colorBackground);
+    width: 100%;
+    height: auto;
+    padding-top: 73px !important;
+    padding-bottom: 50px !important;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.d-why-MainText{
+    color: var(--colorBlueMain);
+    font-family: var(--mainfont);
+    font-size: 37px;
+    font-weight: 700;
+    letter-spacing: 0.37px;
+    text-align: center;
+}
+
+.d-whyCardBg {
+    width: 316px;
+    height: 195px;
+    border-radius: 13.586px;
+    background: #FFF;
+    box-shadow: 0px 3.01913px 13.58607px 0px rgba(34, 87, 122, 0.15);
+  
+    display: flex; /* Center its children */
+    flex-direction: column; /* Stack its children vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+
+    gap: 5px;
+}
+  
+
+.d-whyCardIconBg{
+    height: 50px;
+    width: 50px;
+    border-radius: 30%;
+    box-shadow: 0px 2.01913px 10.58607px 0px rgba(34, 87, 122, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.ri-hotel-fill{
+    font-size: 28px;
+}
+
+.d-whyCardText{
+    width: 210px;
+    height: 28px;
+    color: #22577A;
+    font-family: var(--mainfont);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.616px;
+
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.d-whyCardDescription{
+    width: 278.514px;
+    height: 67.93px;
+    color: #22577A;
+    font-family: var(--mainfont);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.558px;
+    text-align: justify;
+}
+
+.d-why-cardItems{
+    margin-top: 60px;
+}
+
+
+ /* 
+ ==============================================
+                    Shop                  
+ ============================================== 
+ */
+
+ .d-shop-MainText{
+    color: var(--colorBackground);
+    font-family: var(--mainfont);
+    font-size: 37px;
+    font-weight: 700;
+    letter-spacing: 0.37px;
+    text-align: center;
+    padding-top: 73px !important;
+}
+
+
+.d-shopContainer{
+    width: 100%;
+    height: auto;
+    background: var(--colorBlueMain);
+}
+
+.d-shopCardItemsBg{
+    width: 350px;
+    height: 450px;
+    border-radius: 19px;
+    box-shadow: 0px 4px 18px 0px rgba(34, 87, 122, 0.15);
+    background: #FFF;
+    margin-top: 140px;
+    margin-bottom: 50px;
+
+    /* align-items: center;
+    justify-content: center; */
+
+    padding: 0px 30px 30px 30px;
+}
+
+.d-shopProductImg{
+    width: 286px;
+    height: 286px;
+    flex-shrink: 0;
+    /* margin-top: 66px; */
+    /* margin-left: 16px; */
+    margin-top: -66px;
+}
+
+.d-shopTags{
+    height: 20px;
+    width: 100%;
+    background-color: #ec4545;
+}
+
+.d-shopItemTitle{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .45px;
+    line-height: 21px;
+    /* text-align: jd-shopItemTitleustify; */
+    margin-top: 16px;
+}
+
+.d-shopPriceNStock{
+    height: 26px;
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.d-shopRatings{
+    margin-top: 5px;
+    height: 20px;
+    width: 100% !important;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.d-oldPrice{
+    color: #9F9F9F;
+    font-family: var(--mainfont);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.323px;
+    text-decoration-line: strikethrough;
+}
+
+.ri-star-fill{
+    color: var(--colorYellow);
+    font-size: 17px;
+}
+
+.ri-star-half-fill{
+    color: var(--colorYellow);
+    font-size: 17px;
+}
+
+.d-shopStarPack{
+    display: inline;
+}
+
+.d-shopRatingsValue{
+    color: #727272;
+    font-family: Onest;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: -0.975px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+
+    margin-left: 6px;
+}
+
+.d-shopButtonAddToCart{
+    width: 100%;
+    height: 48px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 18px 0px rgba(34, 87, 122, 0.15);
+    background: #22577A;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: var(--mainfont);
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    text-align: center;
+    margin-top: 7px;
+    color: #FFF; 
+    border: 0px transparent;
+}
+
+.d-shopButtonAddToCart:hover{
+    background-color: var(--colorYellow);
+}
+
+.d-shopPrice{
+    color: #22577A;
+    font-family: Onest;
+    font-size: 17.951px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25.131px;
+    letter-spacing: 0.539px;
+    text-transform: capitalize;
+}
+
+.d-shopStock{
+    color: #1BAE0E;
+    font-family: Onest;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0.45px;
+    text-transform: capitalize;
+}
+
+/* shop button */
+.d-shopCstmBotton{
+    padding-bottom: 70px;
+}
+
+
+ /* 
+ ==============================================
+                    Hotel                  
+ ============================================== 
+ */
+
+
+.d-MainPage-Hotels{
+    height: 700px;
+}
+
+.d-hotels-MainText{
+    color: var(--colorBlueMain);
+    font-family: var(--mainfont);
+    font-size: 37px;;
+    font-weight: 700;
+    letter-spacing: 0.37px;
+    margin-top: 70px;
+}
+
+
+ /* 
+ ==============================================
+                    Reviews                  
+ ============================================== 
+ */
+
+ .d-reviews-ContainerFluid{
+    width: 100%;
+    height: auto;
+    background: var(--colorBlueMain);
+ }
+
+ .d-reviews-MainText{
+    color: var(--colorWhite);
+    font-family: var(--mainfont);
+    font-size: 37px;
+    font-weight: 700;
+    letter-spacing: 0.37px;
+    padding-top: 70px;
+ }
+
+ .d-cardContainer{
+    margin-top: 50px;
+    margin-bottom: 70px;
+    height: auto;
+    width: auto;
+ }
+
+ /* items */
+ .d-rev-CardBackground{
+    width: 320px;
+    height: 400px;
+    background-color: var(--colorBackground);
+    border-radius: 14px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    box-shadow: 0px 5.52279px 24.85255px 0px rgba(34, 87, 122, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+ }
+ .d-rev-CardBackground:hover{
+    transform: scale(1.04); /* Scale the card on hover */
+    box-shadow: 0px 10px 30px 0px rgba(34, 87, 122, 0.3); 
+
+ }
+
+/* card profile photo */
+.d-rev-ProfilePhoto{
+    height: 70px;
+    width: 70px;
+    border-radius: 25px;
+    margin-top: 10px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+/* card name */
+.d-rev-Name{
+    color: var(--colorBlueMain);
+    font-family: var(--mainfont);
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: .5px;
+    
+}
+
+.d-rev-position{
+    color: #adadad;
+    font-size: 18px;
+    text-align: center;
+
+}
+
+.d-rev-description{
+    font-size: 16px;
+    text-align: justify;
+    padding: 5px 5px ;
+    font-weight: 500;
+    color: var(--colorGray);
+}
+
+  /* 
+ ==============================================
+                    News Alert                  
+ ============================================== 
+ */
+
+ .d-subscribeContainer{
+    height: auto;
+    width: 100%;
+
+ }
+
+.d-SizedBox60{
+    height: 60px !important;
+    width: 100% !important;
+}
+
+.d-news-title {
+    margin-top: 70px;
+    margin-bottom: 10px;
+    color: #22577A;
+    font-family: Onest;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.37px;
+    text-transform: capitalize;
+}
+  
+.d-news-subTitle {
+    margin-bottom: 20px;
+    width: 460px;
+}
+
+  
+
+.d-News-SearchBar{
+    margin-top: 23px;
+    margin-bottom: 23px;
+    background-color: var(--colorBackground);
+    border: transparent;
+    height: 50px;
+    width: 500px;
+    border-radius: 12px;
+    padding-left: 20px;
+}
+
+.d-newsImg{
+    margin-left: 150px;
+}
+

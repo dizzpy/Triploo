@@ -1,0 +1,245 @@
+:root {
+    /* Font Styles */
+    --mainfont: 'Onest', sans-serif;
+
+    /* Color Variables */
+    --colorBlueMain: #22577A;
+    --colorBlack: #010101;
+    --colorSecondYellow: #f7e8cf;
+    --colorYellow: #EAAB44;
+    --colorGray: #606566;
+    --colorWhite: #FDFDFD;
+    --colorBackground: #F4F9FF;
+}
+/* --------------------------------------------------------- */
+/* destination button start here */
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+   }
+   
+button.d-d-CB-des-LearnMore {
+    width: 12rem;
+    height: auto;
+   }
+   
+   button.d-d-CB-des-LearnMore .d-d-CB-des-Circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: var(--colorBackground);
+    border-radius: 1.625rem;
+   }
+   
+   button.d-d-CB-des-LearnMore .d-d-CB-des-Circle .d-d-CB-des-icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: var(--colorBackground);
+   }
+   
+   button.d-d-CB-des-LearnMore .d-d-CB-des-Circle .d-d-CB-des-icon.d-d-CB-des-Arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   button.d-d-CB-des-LearnMore .d-d-CB-des-Circle .d-d-CB-des-icon.d-d-CB-des-Arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid var(--colorBlueMain);
+    border-right: 0.125rem solid var(--colorBlueMain);
+    transform: rotate(45deg);
+   }
+   
+   button.d-d-CB-des-LearnMore .d-d-CB-des-ButtonText {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    padding-left: 15px !important;
+    margin: 0 0 0 1.85rem;
+    color: var(--colorBackground);
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   
+   button:hover .d-d-CB-des-Circle {
+    width: 100%;
+   }
+   
+   button:hover .d-d-CB-des-Circle .d-d-CB-des-icon.d-d-CB-des-Arrow {
+    background: var(--colorBackground);
+    transform: translate(1rem, 0);
+   }
+   
+   button:hover .d-d-CB-des-ButtonText {
+    color: var(--colorBlueMain);
+   }
+   /* destination button end here */
+   /* --------------------------------------------------------- */
+
+
+   /*! shop */
+
+/* shop button start here */
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+button.d-d-Hotels-LearnMore {
+    width: 12rem;
+    height: auto;
+}
+
+button.d-d-Hotels-LearnMore .d-d-Hotels-Circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: var(--colorBlueMain);
+    border-radius: 1.625rem;
+}
+
+button.d-d-Hotels-LearnMore .d-d-Hotels-Circle .d-d-Hotels-icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: var(--colorBlueMain);
+}
+
+button.d-d-Hotels-LearnMore .d-d-Hotels-Circle .d-d-Hotels-icon.d-d-Hotels-Arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+button.d-d-Hotels-LearnMore .d-d-Hotels-Circle .d-d-Hotels-icon.d-d-Hotels-Arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid var(--colorBackground);
+    border-right: 0.125rem solid var(--colorBackground);
+    transform: rotate(45deg);
+}
+
+button.d-d-Hotels-LearnMore .d-d-Hotels-ButtonText {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    padding-left: 15px !important;
+    margin: 0 0 0 1.85rem;
+    color: var(--colorBlueMain);
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button:hover .d-d-Hotels-Circle {
+    width: 100%;
+}
+
+button:hover .d-d-Hotels-Circle .d-d-Hotels-icon.d-d-Hotels-Arrow {
+    background: var(--colorBlueMain);
+    transform: translate(1rem, 0);
+}
+
+button:hover .d-d-Hotels-ButtonText {
+    color: var(--colorBackground);
+}
+/* shop button end here */
+
+
+
+/* ! Custom Primary Button Start */
+/* navbar login button */
+
+.DizzpyCustomPrimaryButton{
+    width: 140px;
+    height: 45px;
+    border: transparent;
+    border-radius: 12px;
+    color: var(--colorWhite);
+    z-index: 1;
+    background: var(--colorBlueMain);
+    position: relative;
+    font-weight: 800;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(161, 161, 161, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+}
+   
+.DizzpyCustomPrimaryButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: var(--colorYellow);
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+}
+   
+.DizzpyCustomPrimaryButton:hover {
+    color: var(--colorWhite);
+}
+   
+.DizzpyCustomPrimaryButton:hover::before {
+    width: 100%;
+}
+/* ! Custom Primary Button End */
