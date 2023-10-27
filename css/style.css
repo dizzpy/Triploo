@@ -38,23 +38,23 @@ body::-webkit-scrollbar {
 /* Text Selection Styles */
 ::-moz-selection {
     color: var(--colorBlack);
-    background: var(--colorBlueMain);
+    background: var(--colorYellow);
 }
 
 /* Page selection colos  */
 ::selection {
     color: var(--colorWhite);
-    background: var(--colorBlueMain);
+    background: var(--colorYellow);
 }
 
 /* All Other Content */
 /* Here section Start here */
 
 /* nav bar */
-.container{
+/* .container{
     margin-left: 125px !important;
     margin-right: 125px !important;
-}
+} */
 
 .main-logo img{
     width: 110px;
@@ -70,7 +70,7 @@ body::-webkit-scrollbar {
 }
 .nav-link:hover{
     color: var(--colorYellow) !important;
-    /* letter-spacing: 1.2px !important; */
+    /* letter- spacing: 1.2px !important; */
 }
 
 .button{
@@ -105,9 +105,15 @@ body::-webkit-scrollbar {
 
 .navbar{
     background-color: var(--colorBackground) !important;
-    height: 70px !important;
+    /* height: 70px !important; */
+    border-radius: 12px;
+    margin-top: 10px;
 }
 
+.d-NavContainerFluid{
+    background-color: var(--colorBackground) !important;
+    width: 100%;
+}
 /* hero -->> carosel */
 
 .space-tb-20{
@@ -201,6 +207,8 @@ body::-webkit-scrollbar {
     margin-top: -70px;
     /* z-index: 100; */
     background-color: var(--colorWhite);
+
+    
 }
 
 .back-box-links{
@@ -259,91 +267,88 @@ input::placeholder {
  ============================================== 
  */
 
-.destinations{
-    background-color: var(--colorBlueMain);
+ /* .d-destination{
+    background: #22577A;
+    width: 1280px;
+    height: 700px;
+ } */
+
+.d-des-destinationContainer{
+    background: #22577A;
     width: 100%;
-    height: auto;
+    height: 700px;
+    padding-top: 73px !important;
+    padding-bottom: 80px !important;
 }
 
-.destination-main-txt{
-    color: var(--colorWhite);
+.d-des-mainText{
+    color: #ffffff;
     font-family: var(--mainfont);
-    font-size: 32px;
+    font-size: 37px;
+    font-weight: 700;
+    letter-spacing: 0.37px;
+    text-align: center;
+}
+
+/* cards style start */
+.d-DestinationCardBackGround{
+    background-color: var(--colorWhite);
+    width: 300px;
+    height: 276px;
+    padding: 0px !important;
+    border-radius: 14px;
+    transition: .5s;
+}
+.d-DestinationCardBackGround:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.d-DestinationCardImage{
+    width: 100%;
+    height: 100%;
+}
+
+.d-DestinationCardMainTitle{
+    color: var(--colorBlueMain);
+    font-family: var(--mainfont);
+    font-size: 28px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 0.32px;
-    margin-bottom: 30px;
-}
-
-.explore-txt{
-    color: var(--colorWhite);
-    font-family: var(--mainfont);
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    letter-spacing: 0.36px;
-}
-
-.textArea{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.card{
-    width: 250px;
-    height: 276px;
-    padding: 10px !important;
-}
-
-.card-col {
-    margin-right: 5px; /* Adjust the margin as needed */
-}
-.card{
-    padding: 0px !important;
-
-    border-radius: 12px !important;
-    background: #FFF;
-}
-.cardImg{
-    display: flex;
-    width: 100% !important;
-    height: 125px !important;
-    background-color: red;
-    align-self: center;
-
-    border-radius: 10px;
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.cardText{
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;
-    padding-top: 20px;
-    font-family: var(--mainfont);
-    color: var(--colorBlueMain);
-    font-size: 27px !important;
-    font-weight: 700;
-
-}
-
-.cardLocation{
-    justify-content: center;
-    color: var(--colorBlueMain);
+    letter-spacing: 0.277px;
     text-align: center;
-    font-family: var(--mainfont);
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.14px;
-    margin-left: 5px;
-
+    text-transform: capitalize;
+    margin-top: 12px;
+    margin-bottom: 0px;
 }
 
+.d-DestinationLocation{
+    align-items: center;
+    justify-content: center;
+}
+
+.d-DestinationLocationRow{
+    gap: 3px;
+}
+
+/* card style end */
+
+
+/* Caro style start */
+.d-DesIcons{
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--colorWhite);
+    transition: 1s;
+}
+
+.d-DesIcons:hover{
+    text-decoration: none;
+    transform: scale(1.4);
+}
+/* Caro style end */
+  
 
  /* 
  ==============================================
@@ -351,48 +356,598 @@ input::placeholder {
  ============================================== 
  */
 
-.choose-us{
-    display: flex;
+ .d-why-WhyChooseContainer{
+    background: var(--colorBackground);
+    width: 100%;
+    height: auto;
+    padding-top: 73px !important;
+    padding-bottom: 50px !important;
+
+    align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 580px;
 }
 
-.ch-left{
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-
-.ch-right{
-    height: 100%;
-    width: 100%;
-    margin-top: 120px;
-}
-
-.c-img{
-    height: 400px;
-    width: 400px;
-    border-radius: 12px;
-    margin-top: 75px;
-}
-
-.c-main-txt{
+.d-why-MainText{
     color: var(--colorBlueMain);
     font-family: var(--mainfont);
-    font-size: 49px;
+    font-size: 37px;
+    font-weight: 700;
+    letter-spacing: 0.37px;
+    text-align: center;
+}
+
+.d-whyCardBg {
+    width: 316px;
+    height: 195px;
+    border-radius: 13.586px;
+    background: #FFF;
+    box-shadow: 0px 3.01913px 13.58607px 0px rgba(34, 87, 122, 0.15);
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+}
+  
+
+.d-whyCardIconBg{
+    height: 50px;
+    width: 50px;
+    border-radius: 30%;
+    box-shadow: 0px 2.01913px 10.58607px 0px rgba(34, 87, 122, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.ri-hotel-fill{
+    font-size: 28px;
+}
+
+.d-whyCardText{
+    width: 210px;
+    height: 28px;
+    color: #22577A;
+    font-family: var(--mainfont);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.616px;
+
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.d-whyCardDescription{
+    width: 278.514px;
+    height: 67.93px;
+    color: #22577A;
+    font-family: var(--mainfont);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.558px;
+    text-align: justify;
+}
+
+.d-why-cardItems{
+    margin-top: 60px;
+}
+
+
+ /* 
+ ==============================================
+                    Shop                  
+ ============================================== 
+ */
+
+ .d-shop-MainText{
+    color: var(--colorBackground);
+    font-family: var(--mainfont);
+    font-size: 37px;
+    font-weight: 700;
+    letter-spacing: 0.37px;
+    text-align: center;
+    padding-top: 73px !important;
+}
+
+
+.d-shopContainer{
+    width: 100%;
+    height: auto;
+    background: var(--colorBlueMain);
+}
+
+.d-shopCardItemsBg{
+    width: 350px;
+    height: 450px;
+    border-radius: 19px;
+    box-shadow: 0px 4px 18px 0px rgba(34, 87, 122, 0.15);
+    background: #FFF;
+    margin-top: 140px;
+    margin-bottom: 50px;
+
+    /* align-items: center;
+    justify-content: center; */
+
+    padding: 0px 30px 30px 30px;
+}
+
+.d-shopProductImg{
+    width: 286px;
+    height: 286px;
+    flex-shrink: 0;
+    /* margin-top: 66px; */
+    /* margin-left: 16px; */
+    margin-top: -66px;
+}
+
+.d-shopTags{
+    height: 20px;
+    width: 100%;
+    background-color: #ec4545;
+}
+
+.d-shopItemTitle{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .45px;
+    line-height: 21px;
+    /* text-align: jd-shopItemTitleustify; */
+    margin-top: 16px;
+}
+
+.d-shopPriceNStock{
+    height: 26px;
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.d-shopRatings{
+    margin-top: 5px;
+    height: 20px;
+    width: 100% !important;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.d-oldPrice{
+    color: #9F9F9F;
+    font-family: var(--mainfont);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.323px;
+    text-decoration-line: strikethrough;
+}
+
+.ri-star-fill{
+    color: var(--colorYellow);
+    font-size: 17px;
+}
+
+.ri-star-half-fill{
+    color: var(--colorYellow);
+    font-size: 17px;
+}
+
+.d-shopStarPack{
+    display: inline;
+}
+
+.d-shopRatingsValue{
+    color: #727272;
+    font-family: Onest;
+    font-size: 15px;
     font-style: normal;
     font-weight: 700;
+    line-height: 21px;
+    letter-spacing: -0.975px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+
+    margin-left: 6px;
 }
 
-.c-para{
+.d-shopButtonAddToCart{
+    width: 100%;
+    height: 48px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 18px 0px rgba(34, 87, 122, 0.15);
+    background: #22577A;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: var(--mainfont);
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    text-align: center;
+    margin-top: 7px;
+    color: #FFF; 
+    border: 0px transparent;
+}
+
+.d-shopButtonAddToCart:hover{
+    background-color: var(--colorYellow);
+}
+
+.d-shopPrice{
+    color: #22577A;
+    font-family: Onest;
+    font-size: 17.951px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25.131px;
+    letter-spacing: 0.539px;
+    text-transform: capitalize;
+}
+
+.d-shopStock{
+    color: #1BAE0E;
+    font-family: Onest;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0.45px;
+    text-transform: capitalize;
+}
+
+/* shop button */
+.d-shopCstmBotton{
+    padding-bottom: 70px;
+}
+
+
+ /* 
+ ==============================================
+                    Hotel                  
+ ============================================== 
+ */
+
+
+
+
+.d-MainPage-Hotels{
+    height: auto;
+}
+
+.d-hotels-MainText{
     color: var(--colorBlueMain);
     font-family: var(--mainfont);
-    font-size: 17px;
-    font-weight: 600;
-    letter-spacing: 0.17px;
+    font-size: 37px;;
+    font-weight: 700;
+    letter-spacing: 0.37px;
+    margin-top: 70px;
 }
-/* Here section End here */
 
+.A-card {
+    margin-left: 10px;
+    margin-top: 30px;
+    width: 320px;
+    height: Auto;
+    flex-shrink: 0;
+    border-radius: 18px;
+    background: var(--colorWhite);
+    box-shadow: 4px 8px 19px -3px  #d6d5d5;
+    padding-bottom: 20px;
+    padding-right: 20px;
+
+    transition: 0.5s;
+  }
+
+.A-card:hover{
+    transform: scale(1.02);
+}
+  
+  .A-card-img {
+    background-color: #606566;
+    width: 320px;
+    height: 205.013px;
+    flex-shrink: 0;
+    border-radius: 18px 18px 0px 0px;
+  }
+  
+  .A-card-imgs {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    border-radius: 18px 18px 0px 0px;
+  }
+  
+  .A-card-title {
+    color: #22577A;
+    font-family: Onest;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.100px;
+    text-transform: capitalize;
+    margin: 15px 15px 15px 15px;
+  }
+  
+  .A-card-location-description {
+    padding-left: 20px;
+    width: 303.753px;
+    height: 205.013px;
+    color: #22577A;
+    font-family: Onest;
+    font-size: 12px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.966px;
+    text-transform: capitalize;
+    font-weight: 300;
+    margin-top: -11px;
+  }
+  
+  .A-card-dis-1 {
+    color: rgba(112, 123, 130, 0.53);
+    font-family: Onest;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.069px;
+    text-transform: capitalize;
+    margin-top: -170px;
+    margin-left: 20px;
+  }
+  
+  .A-card-price {
+    color: #22577A;
+    font-family: Onest;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-left: 18px;
+    margin-top: -12px;
+  }
+  
+  .A-card-price-cross {
+    color: #FC5959;
+    font-family: Onest;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.104px;
+    text-decoration-line: strikethrough;
+    text-transform: capitalize;
+    margin-left: 72px;
+    margin-top: -20px;
+  
+  }
+  
+  .A-card-discription {
+    color: #22577A;
+    font-family: Onest;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.338px;
+    text-transform: capitalize;
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 0px;
+  }
+  
+  .A-card-discription-1 {
+    color: rgba(34, 87, 122, 0.75);
+    font-family: Onest;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.416px;
+    text-transform: capitalize;
+    margin-left: 18px;
+    margin-top: 20px;
+  }
+  
+  .A-ul-items-card-list {
+    color: #22577A;
+    font-family: Onest;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.608px;
+    text-transform: capitalize;
+    margin-left: 30px;
+    margin-top: -8px;
+  
+  }
+  
+  
+  
+  .A-cross-price-card-2 {
+      margin-left: -10px;
+  }
+  
+     .A-btn-card {
+      background-color: var(--colorWhite);
+      padding: 10px 10px 10px 10px;
+      border-radius: 20px;
+      height: 30px;
+      width: 100px;
+      border: 2px solid #22577A;
+      font-size: 10px;
+      margin-left: 20px;
+      margin-top: 35px;
+     }
+  
+     .A-btn-text-card {
+      font-family: var(--mainfont);
+      margin-top: -5px;
+     }
+  
+  
+     .A-btn-card:hover {
+      background-color: var(--colorBlueMain);
+      color: var(--colorWhite);
+      transition: 0.5s;
+     }
+     .A-card-signin:hover {
+        color: var(--colorYellow);
+    }
+    
+    .A-card-signin::after {
+        color: #606566;
+    }
+    
+    .A-card-signin::before {
+        color: var(--colorBlueMain);
+    }
+
+ /* 
+ ==============================================
+                    Reviews                  
+ ============================================== 
+ */
+
+ .d-reviews-ContainerFluid{
+    width: 100%;
+    height: auto;
+    background: var(--colorBlueMain);
+ }
+
+ .d-reviews-MainText{
+    color: var(--colorWhite);
+    font-family: var(--mainfont);
+    font-size: 37px;
+    font-weight: 700;
+    letter-spacing: 0.37px;
+    padding-top: 70px;
+ }
+
+ .d-cardContainer{
+    margin-top: 50px;
+    margin-bottom: 70px;
+    height: auto;
+    width: auto;
+ }
+
+ /* items */
+ .d-rev-CardBackground{
+    width: 320px;
+    height: 400px;
+    background-color: var(--colorBackground);
+    border-radius: 14px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    box-shadow: 0px 5.52279px 24.85255px 0px rgba(34, 87, 122, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+ }
+ .d-rev-CardBackground:hover{
+    transform: scale(1.02); /* Scale the card on hover */
+    box-shadow: 0px 10px 30px 0px rgba(34, 87, 122, 0.3); 
+
+ }
+
+/* card profile photo */
+.d-rev-ProfilePhoto{
+    height: 70px;
+    width: 70px;
+    border-radius: 25px;
+    margin-top: 10px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+/* card name */
+.d-rev-Name{
+    color: var(--colorBlueMain);
+    font-family: var(--mainfont);
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: .5px;
+    
+}
+
+.d-rev-position{
+    color: #adadad;
+    font-size: 18px;
+    text-align: center;
+
+}
+
+.d-rev-description{
+    font-size: 16px;
+    text-align: justify;
+    padding: 5px 5px ;
+    font-weight: 500;
+    color: var(--colorGray);
+}
+
+  /* 
+ ==============================================
+                    News Alert                  
+ ============================================== 
+ */
+
+ .d-subscribeContainer{
+    height: auto;
+    width: 100%;
+
+ }
+
+.d-SizedBox60{
+    height: 60px !important;
+    width: 100% !important;
+}
+
+.d-news-title {
+    margin-top: 70px;
+    margin-bottom: 10px;
+    color: #22577A;
+    font-family: Onest;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.37px;
+    text-transform: capitalize;
+}
+  
+.d-news-subTitle {
+    margin-bottom: 20px;
+    width: 460px;
+}
+
+  
+
+.d-News-SearchBar{
+    margin-top: 23px;
+    margin-bottom: 23px;
+    background-color: var(--colorBackground);
+    border: transparent;
+    height: 50px;
+    width: 500px;
+    border-radius: 12px;
+    padding-left: 20px;
+}
+
+.d-newsImg{
+    margin-left: 150px;
+}
 
